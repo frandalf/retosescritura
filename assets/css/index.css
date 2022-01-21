@@ -1,0 +1,181 @@
+body{
+    background:#a5b5c5;
+    background:lightblue !important;
+    padding: 50px;
+    height: 100%;
+ }
+
+.container {
+     positioN:relative;
+     overflow-y: auto;
+}
+ 
+.box {
+    background: #fff;
+    /*border-radius: 4px;*/
+    padding-bottom: 100%;
+    text-align: center;
+    overflow: hidden;    
+   /* pointer-events: none;*/
+
+}
+
+
+.cubo {
+    margin-top: 30px !important;
+  /*  pointer-events: none;*/
+
+}
+ 
+.col-lg-2 .col-lg-1 {
+    margin-top: 30px !important;
+}
+
+.numCubo {
+    text-align: center;
+    font-weight: bold;
+}
+
+.divCube {
+    vertical-align:middle;
+    pointer-events:none;
+}
+
+.cuboActivo {
+    outline: 3px solid greenyellow;
+    cursor: pointer;
+}
+    .cuboActivo.cuboPasado > .box {
+        background: #2d9b01cc !important;
+        outline: 5px solid white;
+        color: white;
+    }
+
+.cuboInactivo {
+    outline: 2px solid grey;
+    opacity: 30%;
+    color: lightgray
+}   
+    .cuboInactivo > .box {
+        background: grey !important;
+    }
+
+.cuboPasado {
+    outline: 2px solid green;
+    color: greenyellow;
+    opacity: 60%;
+}
+    .cuboPasado > .box {
+        background: rgba(24, 85, 0, 0.8) !important;
+    }
+
+.cuboFallido {
+    outline: 2px solid red;
+    color: #fff;
+    opacity: 60%;
+}
+    .cuboFallido > .box {
+        background: rgba(85, 0, 0, 0.8) !important;
+    }
+
+
+.cuboFinde {
+    outline: 2px solid black;
+    color: #fff;
+    opacity: 40%;
+}
+    .cuboFinde > .box {
+        background: #333333cc !important;
+    }
+
+.cuboPremio {
+    outline: 5px outset gold !important;
+    opacity: 100%;
+}
+
+
+.cuboFinde > .box {
+    opacity: 40%;
+}
+
+
+
+.opciones_user {
+    background: white;
+    border: 1px solid cadetblue;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+
+#boton_editar {
+    margin-top: 16px;
+}
+
+.beta {
+    background: red;
+    color: white;
+    font-weight: bold;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.medalla {
+    height: 25px;
+}
+
+.aclaracion{
+ color: gray;
+ font-size: 0.8em;
+
+}
+
+
+.modal-header > h5 > img {
+    height: 20px;
+}
+
+    #congrats_izq {
+        transform: scaleX(-1);
+    }
+
+.color_azul {
+    color: #ADD8E6;
+}
+/* LOADING */
+
+
+#loading{
+    width: 100%;
+    height: 100%;
+    background: #0d161f;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    /*display: none;*/
+}
+
+
+
+#circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 150px;	
+}
+
+.loader {
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    border: 8px solid #162534;
+    border-top: 8px solid #09f;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    100% {transform: rotate(360deg);}
+} 
